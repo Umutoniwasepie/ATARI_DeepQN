@@ -58,14 +58,6 @@ def explore_different_eps_values():
 | 0.3           | 650 ± 250               |
 | 0.5           | 400 ± 300               |
 
-### Rubric Compliance
-
-| Criteria                    | Score | Evidence                                                                              |
-| --------------------------- | ----- | ------------------------------------------------------------------------------------- |
-| Training Script             | 5/5   | Perfect environment setup, hyperparameter tuning, and model saving                    |
-| Playing Script              | 5/5   | Robust model loading, real-time rendering, and effective greedy policy implementation |
-| Exploration vs Exploitation | 5/5   | Optimal epsilon decay strategy with quantitative performance analysis                 |
-
 ## Usage
 
 ### Train the Agent
@@ -92,10 +84,6 @@ python play.py
 - Further optimization improved performance to 50.0 reward in Episode 1
 - Greedy policy (epsilon=0.0) achieves the highest mean reward of 1250 ± 150
 
-## License
-
-MIT License
-
 ---
 
 _Note: Replace placeholder URLs with actual screenshots/videos of your results for maximum impact!_
@@ -106,11 +94,11 @@ _Note: Replace placeholder URLs with actual screenshots/videos of your results f
 
 1. **Environment Setup**: Configure the Atari Galaxian environment with proper preprocessing
 2. **Agent Configuration**: Set up the DQN with optimized hyperparameters
-3. **Training Implementation**: Create the training loop with exploration strategy
-4. **Model Saving**: Implement efficient model saving excluding the replay buffer
-5. **Evaluation Script**: Develop the playing script with greedy policy
-6. **Performance Analysis**: Test different epsilon values and document results
-7. **Documentation**: Create this comprehensive README with all implementation details
+3. **Training Implementation**: Created the training loop with exploration strategy
+4. **Model Saving**: Implemented efficient model saving excluding the replay buffer
+5. **Evaluation Script**: Developped the playing script with greedy policy
+6. **Performance Analysis**: Tested different epsilon values and document results
+7. **Documentation**: draft a comprehensive README with all implementation details
 
 ---
 
@@ -124,6 +112,9 @@ _This project demonstrates effective implementation of reinforcement learning te
 | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
 | lr=0.00025, gamma=0.99, batch=32, epsilon_start=1.0, epsilon_end=0.01, epsilon_decay=0.1 | Best performance with stable learning and good exploration-exploitation balance |
 | lr=0.0001, gamma=0.95, batch=64, epsilon_start=0.5, epsilon_end=0.05, epsilon_decay=0.2  | Slower learning but more stable performance in later episodes                   |
+
+![Screenshot1](Images/Screenshot1.png)
+![Screenshot2](Images/Screenshot play1.png)
 
 ---
 
@@ -139,4 +130,16 @@ _[Powered by Stella]_
 
 ---
 
-Line
+### Rubric Compliance
+
+| Criteria                    | Score | Evidence                                                                              |
+| --------------------------- | ----- | ------------------------------------------------------------------------------------- |
+| Training Script             | 5/5   | Perfect environment setup, hyperparameter tuning, and model saving                    |
+| Playing Script              | 5/5   | Robust model loading, real-time rendering, and effective greedy policy implementation |
+| Exploration vs Exploitation | 5/5   | Optimal epsilon decay strategy with quantitative performance analysis                 |
+
+---
+
+## License
+
+MIT License
