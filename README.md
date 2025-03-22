@@ -114,7 +114,8 @@ _This project demonstrates effective implementation of reinforcement learning te
 | lr=0.0001, gamma=0.95, batch=64, epsilon_start=0.5, epsilon_end=0.05, epsilon_decay=0.2  | Slower learning but more stable performance in later episodes                   |
 
 ![Screenshot1](Images/Screenshot1.png)
-![Screenshot2](Images/Screenshot play1.png)
+
+![Screenshot2](Images/Screenshot_play1.png)
 
 ---
 
