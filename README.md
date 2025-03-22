@@ -58,7 +58,9 @@ def explore_different_eps_values():
 
 ### Training Metrics (TensorBoard)
 
-![TensorBoard Metrics](placeholder-for-tensorboard-metrics)
+![TensorBoard Metrics1](Images/Screenshot4.png)
+
+![TensorBoard Metrics2](Images/Screenshot5.png)
 
 ### Gameplay Performance
 
