@@ -119,12 +119,14 @@ _This project demonstrates effective implementation of reinforcement learning te
 
 ---
 
-## Hyperparameter Experiments
+## Hyperparameter Set Documentation
 
-| Hyperparameter Set                                                                       | Noted Behavior                                                                  |
-| ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| lr=0.00025, gamma=0.99, batch=32, epsilon_start=1.0, epsilon_end=0.01, epsilon_decay=0.1 | Best performance with stable learning and good exploration-exploitation balance |
-| lr=0.0001, gamma=0.95, batch=64, epsilon_start=0.5, epsilon_end=0.05, epsilon_decay=0.2  | Slower learning but more stable performance in later episodes                   |
+| Hyperparameter Set                                                                         | Noted Behavior                                                                      |
+| ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
+| `lr=0.00025, gamma=0.99, batch=32, epsilon_start=1.0, epsilon_end=0.01, epsilon_decay=0.1` | Best performance with stable learning and good exploration-exploitation balance.    |
+| `lr=0.0001, gamma=0.95, batch=64, epsilon_start=0.5, epsilon_end=0.05, epsilon_decay=0.2`  | Slower learning but more stable performance in later episodes.                      |
+| `lr=0.0005, gamma=0.99, batch=64, epsilon_start=1.0, epsilon_end=0.01, epsilon_decay=0.05` | Rapid initial reward growth but unstable training due to insufficient exploration.  |
+| `lr=0.0001, gamma=0.999, batch=32, epsilon_start=1.0, epsilon_end=0.1, epsilon_decay=0.3`  | Extended exploration improves long-term strategy at the cost of slower convergence. |
 
 ![Screenshot1](Images/Screenshot1.png)
 
