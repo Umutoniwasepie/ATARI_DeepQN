@@ -133,11 +133,11 @@ _[Powered by Stella]_
 
 ### Rubric Compliance
 
-| Criteria                    | Score | Evidence                                                                              |
-| --------------------------- | ----- | ------------------------------------------------------------------------------------- |
-| Training Script             | 5/5   | Perfect environment setup, hyperparameter tuning, and model saving                    |
-| Playing Script              | 5/5   | Robust model loading, real-time rendering, and effective greedy policy implementation |
-| Exploration vs Exploitation | 5/5   | Optimal epsilon decay strategy with quantitative performance analysis                 |
+| Criteria                    | Rate | Evidence                                                                              |
+| --------------------------- | ---- | ------------------------------------------------------------------------------------- |
+| Training Script             | \*/5 | Perfect environment setup, hyperparameter tuning, and model saving                    |
+| Playing Script              | \*/5 | Robust model loading, real-time rendering, and effective greedy policy implementation |
+| Exploration vs Exploitation | \*/5 | Optimal epsilon decay strategy with quantitative performance analysis                 |
 
 ---
 
