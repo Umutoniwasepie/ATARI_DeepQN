@@ -140,17 +140,3 @@ _[Powered by Stella]_
 ---
 
 Line
-
-🔄 **Follow-up Prompts to Continue the Chat:**
-
-```
-Can you help me add a section about how to visualize the TensorBoard metrics from my training logs?
-```
-
-```
-What would be the best way to showcase the agent's gameplay in my README? Should I include GIFs, videos, or just screenshots?
-```
-
-```
-Could you suggest some additional experiments I could run to further optimize my DQN agent's performance?
-```
