@@ -36,5 +36,5 @@ model = DQN(
 )
 
 # Train and save
-model.learn(total_timesteps=300_000)
+model.learn(total_timesteps=1_000_000)
 model.save("dqn_galaxian", exclude=["replay_buffer"])  # Exclude replay buffer
