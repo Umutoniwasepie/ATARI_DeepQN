@@ -115,7 +115,7 @@ _This project demonstrates effective implementation of reinforcement learning te
 
 ![Screenshot1](Images/Screenshot1.png)
 
-![Screenshot2](Images/Screenshot_play1.png)
+![Screenshot3](Images/Screenshot3.png)
 
 ---
 
