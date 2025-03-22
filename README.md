@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project implements a Deep Q-Network (DQN) agent to play the Atari Galaxian game using Stable Baselines 3 and Gymnasium. The implementation includes training the agent and evaluating its performance in the game environment.
+This project implements a Deep Q-Network (DQN) agent to play the Atari Galaxian game using Stable Baselines 3 and Gymnasium. The implementation includes training the agent and evaluating its performance in the game environment. The agent learns through exploration/exploitation trade-offs and is evaluated in a real-time gameplay environment.
 
 ## Environment
 
@@ -19,6 +19,17 @@ This project implements a Deep Q-Network (DQN) agent to play the Atari Galaxian 
 | DQN Configuration    | Optimized hyperparameters: learning_rate=0.00025, gamma=0.99, batch_size=32          |
 | Exploration Strategy | Linear epsilon decay from 1.0 → 0.01 over 10% of training (exploration_fraction=0.1) |
 | Model Saving         | Excludes replay buffer: model.save("dqn_galaxian", exclude=["replay_buffer"])        |
+
+---
+
+## Features
+
+✅ **Training Script**  
+✅ **Playing Script with Real-Time Rendering**  
+✅ **Hyperparameter Tuning & Epsilon Decay**  
+✅ **Exploration vs. Exploitation Analysis**
+
+---
 
 ### Playing Script Excellence
 
