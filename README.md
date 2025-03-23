@@ -99,7 +99,7 @@ python play.py
 
 ---
 
-[![Watch the video](Images/Video_of_Gameplay/thumbnail.png)](Images/Video_of_Gameplay/Galaxian_ML.mp4)
+<img alt="Watch the video" src="https://drive.google.com/uc?export=view&amp;id=1WUQSyHQHf2afpvYVemeH1WJB_75Kk6sf">
 
 ---
 
