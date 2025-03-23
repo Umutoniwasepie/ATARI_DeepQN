@@ -97,5 +97,3 @@ if __name__ == "__main__":
     # Run evaluation
     play_and_evaluate(MODEL_PATH, ENV_ID)
     
-    # Optional exploration testing
-    # explore_different_eps_values(MODEL_PATH, ENV_ID)

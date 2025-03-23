@@ -1,9 +1,9 @@
 import os
 from ale_py import ALEInterface
 
-# Set the ROM path to your downloaded directory
-os.environ["ALE_ROMS"] = os.path.abspath("./roms")  # Use absolute path
-ALEInterface()  # Initialize ALE
+# Setting the ROM path to your downloaded directory
+os.environ["ALE_ROMS"] = os.path.abspath("./roms")  
+ALEInterface()  
 
 
 
@@ -13,15 +13,15 @@ from stable_baselines3 import DQN
 from stable_baselines3.common.vec_env import VecFrameStack
 from stable_baselines3.common.env_util import make_atari_env
 
-# Set ROM path and initialize ALE
-os.environ["ALE_ROMS"] = "./roms"  # Path to your ROMs directory
+# Setting ROM path and initialize ALE
+os.environ["ALE_ROMS"] = "./roms"  
 ALEInterface()
 
 # Create the environment
 env = make_atari_env("ALE/Galaxian-v5", n_envs=1)
-env = VecFrameStack(env, n_stack=4)  # Stack 4 frames
+env = VecFrameStack(env, n_stack=4)  
 
-# Define the DQN agent
+# Defining the DQN agent
 model = DQN(
     "CnnPolicy",
     env,
@@ -29,12 +29,12 @@ model = DQN(
     learning_rate=0.00025,
     gamma=0.99,
     batch_size=32,
-    exploration_initial_eps=1.0,  # Start with 100% random actions
-    exploration_final_eps=0.01,    # End with 1% random actions
-    exploration_fraction=0.1,      # Decay epsilon over 10% of training time
+    exploration_initial_eps=1.0,  
+    exploration_final_eps=0.01,    
+    exploration_fraction=0.1,      
     tensorboard_log="./logs/"
 )
 
 # Train and save
 model.learn(total_timesteps=1_000_000)
-model.save("dqn_galaxian", exclude=["replay_buffer"])  # Exclude replay buffer
+model.save("dqn_galaxian", exclude=["replay_buffer"])
