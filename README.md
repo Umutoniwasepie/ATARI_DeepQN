@@ -99,7 +99,7 @@ python play.py
 
 ---
 
-<img alt="Watch the video" src="https://drive.google.com/uc?export=view&amp;id=1WUQSyHQHf2afpvYVemeH1WJB_75Kk6sf">
+<img alt="Watch the video" src="https://drive.google.com/file/d/1WUQSyHQHf2afpvYVemeH1WJB_75Kk6sf/view?usp=drive_link">
 
 ---
 
