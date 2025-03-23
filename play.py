@@ -13,15 +13,15 @@ ALEInterface()
 
 def make_atari_env(env_id, n_envs=1, seed=None, render_mode="human"):
     """
-    Create a wrapped Atari environment with proper preprocessing
+    Create a wrapped Atari environment 
     """
     def make_env(rank):
         def _init():
             # Create base environment
             env = gym.make(env_id, render_mode=render_mode)
             
-            # Apply Atari preprocessing wrappers (MUST MATCH TRAINING)
-            env = AtariWrapper(env)  # Handles resize, grayscale, frame skip
+            
+            env = AtariWrapper(env) 
             
             if seed is not None:
                 env.reset(seed=seed + rank)
@@ -31,7 +31,7 @@ def make_atari_env(env_id, n_envs=1, seed=None, render_mode="human"):
     # Create vectorized environment
     env = DummyVecEnv([make_env(i) for i in range(n_envs)])
     
-    # Stack 4 frames (MUST match training configuration)
+    # Stack 4 frames 
     env = VecFrameStack(env, n_stack=4)
     
     return env
@@ -61,7 +61,7 @@ def play_and_evaluate(model_path, env_id, num_episodes=3):
             
             # Render the game
             env.render()
-            time.sleep(0.02)  # Slow down for visual clarity
+            time.sleep(0.02)  
         
         print(f"Episode {episode + 1}: Total Reward = {total_reward}")
     
@@ -91,8 +91,8 @@ def explore_different_eps_values(model_path, env_id, epsilon_values=[0.0, 0.1, 0
 
 if __name__ == "__main__":
     # Configuration (MUST match training setup)
-    MODEL_PATH = "dqn_galaxian.zip"  # Exact model name from training
-    ENV_ID = "ALE/Galaxian-v5"  # Full namespace required
+    MODEL_PATH = "dqn_galaxian.zip"  
+    ENV_ID = "ALE/Galaxian-v5"  
     
     # Run evaluation
     play_and_evaluate(MODEL_PATH, ENV_ID)
