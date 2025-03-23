@@ -99,7 +99,7 @@ python play.py
 
 ---
 
-_Note: Replace placeholder URLs with actual screenshots/videos of your results for maximum impact!_
+[![Watch the video](Images/Video of Gameplay/thumbnail.png)](Images/Video_of_Gameplay/Galaxian_ML.mp4)
 
 ---
 
