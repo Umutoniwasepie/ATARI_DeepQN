@@ -99,7 +99,7 @@ python play.py
 
 ---
 
-<img alt="Watch the video" src="https://drive.google.com/file/d/1WUQSyHQHf2afpvYVemeH1WJB_75Kk6sf/view?usp=drive_link">
+[![Watch the video](Images/Video/thumbnail.png)](Images/Video/Galaxian_ML.mp4)
 
 ---
 
