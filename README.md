@@ -99,11 +99,9 @@ python play.py
 
 ---
 
-## Video
+## Demo Video
 
-[Watch the video](https://drive.google.com/file/d/1WUQSyHQHf2afpvYVemeH1WJB_75Kk6sf/view?usp=sharing)
-
-[![Watch the video](Images/Video/Thumbnail.png)](Images/Video/Galaxian.mp4)
+[Watch the video here](https://drive.google.com/file/d/1WUQSyHQHf2afpvYVemeH1WJB_75Kk6sf/view?usp=sharing)
 
 ---
 
